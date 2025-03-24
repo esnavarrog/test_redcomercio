@@ -18,7 +18,7 @@ class _HomeViewState extends State<HomeView> {
     setState(() {
       _controller.incrementCounter(button);
       String timestamp = DateFormat(
-        'kk:mm:ss del dd-MM-yyyy',
+        'kk:mm:ss - dd-MM-yyyy',
       ).format(DateTime.now());
       _history.add({
         'text':
