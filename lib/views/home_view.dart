@@ -41,9 +41,10 @@ class _HomeViewState extends State<HomeView> {
       ),
       body: Column(
         children: [
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            spacing: 20,
+            spacing: 2,
             children:
                 _controller.buttons.map((button) {
                   return ElevatedButton(
@@ -61,7 +62,7 @@ class _HomeViewState extends State<HomeView> {
           const SizedBox(height: 20),
           const Divider(),
           const Text(
-            'Historia:',
+            'Historia',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const Divider(),
